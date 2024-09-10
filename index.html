@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon" />
     <!-- style do tailwind css -->
     <link rel="stylesheet" href="./styles/output.css" />
-    <title>Lanchonete Fametro</title>
+    <title>Lanchonete Unifametro</title>
   </head>
   <body>
     <!-- header -->
@@ -36,12 +36,16 @@
 
         <!-- titulo -->
         <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
-          Lanchonete Fametro
+          Lanchonete Unifametro
         </h1>
 
-        <p class="text-white font-medium">
-          Rua Carneiro da Cunha Nº 180 - Jacarecanga
-        </p>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-white"></i>
+          <p class="text-white font-medium">
+            Rua Carneiro da Cunha Nº 180 - Jacarecanga
+          </p>
+        </div>
+
         <!-- horario -->
         <!-- px: esquerda e direita, py- em cima e baixo -->
         <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
@@ -55,15 +59,20 @@
     <!-- fim header -->
 
     <!-- md: tela de 738px -->
-    <h2 class="text-2xl text-center font-bold mt-9 mb-7 md:text-3xl">
-      Conheça nosso menu
+    <h2 class="text-2xl text-center font-bold mt-9 mb-9 md:text-3xl">
+      Conheça Nosso Menu
     </h2>
 
-    <!-- menu -->
+    <div class="mx-auto max-w-7xl px-2 my-2 mb-5">
+      <h2 class="font-bold text-3xl">Salgados</h2>
+    </div>
+    <!-- MENU -->
     <div id="menu">
-      <main>
-        <!-- produto item -->
-        <div>
+      <main
+        class="grid grid-cols-1 gap-7 md:gap-10 md:grid-cols-2 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!-- produto item 1-->
+        <div class="flex gap-2">
           <!-- rotate: rotaciona -->
           <img
             src="./assets/coxinha.jfif"
@@ -72,18 +81,110 @@
           />
 
           <div>
-            <p class="font-bold">Coxinha de frango</p>
+            <p class="font-bold">Coxinha de Frango</p>
             <p class="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              itaque perspiciatis, ipsa porro maxime blanditiis reiciendis odit
-              animi voluptatem quisquam exercitationem eos officia nemo at
-              molestiae et. Aut, obcaecati? Vero?
+              Crocante por fora e recheada com um suculento frango desfiado.
             </p>
 
             <!-- preço e botao -->
-            <div>
-              <p>5,0$</p>
-              <button class="bg-gray-900">
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Coxinha de Frango"
+                data-price="5.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- fim produto item -->
+
+        <!-- Produto item 2-->
+        <div class="flex gap-2">
+          <!-- rotate: rotaciona -->
+          <img
+            src="./assets/pastel.png"
+            alt="pastel"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Pastel de Carne</p>
+            <p class="text-sm">
+              Recheado com carne temperada e envolto em uma massa leve.
+            </p>
+
+            <!-- preço e botao -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-to-cart-btn"
+                data-name="Pastel de Carne"
+                data-price="5.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- fim produto item -->
+
+        <!-- Produto item 3-->
+        <div class="flex gap-2">
+          <!-- rotate: rotaciona -->
+          <img
+            src="./assets/enroladinho.jfif"
+            alt="enroladinho"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Enroladinho de Salsicha</p>
+            <p class="text-sm">
+              Salsicha macia envolta em uma massa douradinha e saborosa.
+            </p>
+
+            <!-- preço e botao -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-to-cart-btn"
+                data-name="Enroladinho de Salsicha"
+                data-price="5.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- fim produto item -->
+
+        <!-- Produto item 4-->
+        <div class="flex gap-2">
+          <!-- rotate: rotaciona -->
+          <img
+            src="./assets/presunto.jfif"
+            alt="churros"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Salgado de Presunto com Queijo</p>
+            <p class="text-sm">
+              Massa dourada e crocante, recheada com uma combinação
+              irresistível.
+            </p>
+
+            <!-- preço e botao -->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-to-cart-btn"
+                data-name="Churros"
+                data-price="5.00"
+              >
                 <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
               </button>
             </div>
@@ -91,7 +192,349 @@
         </div>
         <!-- fim produto item -->
       </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-5">
+        <h2 class="font-bold text-3xl">Hambúrguers</h2>
+      </div>
+      <!-- GRID HAMBURGUERS -->
+      <div
+        class="grid grid-cols-1 gap-7 md:gap-10 md:grid-cols-2 mx-auto max-w-7xl px-2 mb-16"
+        id="menu"
+      >
+        <!-- hamb 1-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/hamb-1.png"
+            alt="coca"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">n1</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 10.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Coca Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- hamb 1-->
+
+        <!-- hamb 2-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/hamb-2.png"
+            alt="coca"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">n1</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 10.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Coca Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM hamb 2-->
+
+        <!-- hamb 3-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/hamb-3.png"
+            alt="coca"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">n3</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 10.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Coca Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM 1-->
+
+        <!-- hamb 4-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/hamb-4.png"
+            alt="coca"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">n4</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 10.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Coca Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM ham4 4-->
+      </div>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+      </div>
+
+      <!-- GRID BEBIDAS -->
+      <div
+        class="grid grid-cols-1 gap-7 md:gap-10 md:grid-cols-2 mx-auto max-w-7xl px-2 mb-16"
+        id="menu"
+      >
+        <!-- BEBIDA 1-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-1.png"
+            alt="coca"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Coca Lata</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Coca Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM 1-->
+
+        <!-- BEBIDA 2-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-2.png"
+            alt="guarana"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Guaraná Lata</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Guaraná Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM-->
+
+        <!-- BEBIDA 3-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/graj-removebg-preview.png"
+            alt="guaj"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Guaraná Jesus Lata</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Guaraná Jesus Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM 3-->
+
+        <!-- BEBIDA 4-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/water-removebg-preview.png"
+            alt="Agua"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Água Mineral</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Agua Mineral"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM-->
+
+        <!-- BEBIDA 5-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/fanta-removebg-preview.png"
+            alt="Fanta Laranja Lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Fanta Laranja Lata</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-400 px-5 rounded add-two-cart-btn"
+                data-name="Fanta Laranja Lata"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM-->
+
+        <!-- BEBIDA 2-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/monster.png"
+            alt="monster"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Monster</p>
+
+            <!-- PREÇO E BOTAO-->
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button
+                class="bg-green-600 hover:bg-green-40 px-5 rounded add-two-cart-btn"
+                data-name="Monster"
+                data-price="6.00"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"> </i>
+              </button>
+            </div>
+            <!-- preço e botao -->
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM-->
+      </div>
+      <!-- FIM GRID BEBIDAS -->
     </div>
-    <!-- fim menu -->
+    <!-- FIM MENU -->
+
+    <!-- MODAL -->
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center"
+    >
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+        <!-- produto -->
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Seu Nome:</p>
+        <input
+          type="text"
+          placeholder="Digite seu Nome e Sobrenome"
+          class="w-full border-2 rounded p-1 my-1"
+        />
+
+        <p class="text-red-700 hidden" id="name-warn">
+          Digite seu Nome e Sobrenome!/p>
+        </p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button
+            id="close-modal-btn"
+            class="bg-orange-500 text-white rounded px-4 py-1 font-bold"
+          >
+            Fechar
+          </button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 text-white rounded px-4 py-1 font-bold"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--FIM MODAL -->
+
+    <footer
+      class="w-full bg-orange-700 py-3 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <button
+        class="flex items-center gap-2 text-white font-bold cursor-pointer"
+        id="cart-btn"
+      >
+        (<span id="cart-count">0</span>) Ver meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
   </body>
 </html>
