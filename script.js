@@ -1,0 +1,9 @@
+const menu = document.getElementById("menu");
+const cartBtn = document.getElementById("cart-btn");
+const cartModal = document.getElementById("cart-modal"); // modal
+const cartItemsContainer = document.getElementById("cart-items"); // itens carrinho
+const cartTotal = document.getElementById("cart-total"); // total
+const checkoutBtn = document.getElementById("checkout-btn"); // finalizar pedido
+const closemodalBtn = document.getElementById("close-modal-btn"); // fechar modal
+const closeCounter = document.getElementById("cart-count"); // fechar modal
+const name = document.getElementById("name"); //nome
