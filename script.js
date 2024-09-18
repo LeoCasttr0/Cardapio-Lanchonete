@@ -180,7 +180,7 @@ checkoutBtn.addEventListener("click", function () {
 
   // variaveis de mensagem e numero
   const message = encodeURIComponent(cartItems);
-  const phone = "85988311261";
+  const phone = "5585988311261";
 
   // enviando mensagem e numero
   window.open(
